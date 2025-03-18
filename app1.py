@@ -32,4 +32,4 @@ user_input = st.text_input("Enter your question:", "")
 if user_input:
     response = chain.invoke({"input": user_input})
     st.subheader("Chatbot's Response:")
-    st.write(response[:300])  # Trim to 300 characters
+    st.write(response)  # Trim to 300 characters
